@@ -74,3 +74,37 @@ for (const key in users) {
 let promVolume = sumVol / lenghtvolume;
 
 console.log("El promedio de volumen es", promVolume);
+
+/* **Iteración #3: Mix Fors**
+
+Dado el siguiente javascript usa forof y forin para saber cuantas veces ha sido cada sonido agregado por los usuarios a favorito. Para ello recorre la lista de usuarios y usa forin para recoger el nombre de los sonidos que el usuario tenga como favoritos.
+Una vez accedas a ellos piensa en la mejor forma de hacer un conteo de cada vez que ese sonido se repita como favorito en cada usuario.
+
+Este ejercicio es un poco complicado con los conocimientos actuales pero...a la vez un buen reto y oportunidad para comprender que hay muchas formas de hacer las cosas en javascript. */
+
+let countWaves = 0;
+let countRain = 0;
+let countFirecamp = 0;
+let countShower = 0;
+let countTrain = 0;
+for (const key in users) {
+  if (typeof users[key].favoritesSounds === Object);
+  for (const k in users[key].favoritesSounds) {
+    if (k === "rain") {
+      countRain++;
+    } else if (k === "train") {
+      countTrain++;
+    } else if (k === "waves") {
+      countWaves++;
+    } else if (k === "firecamp") {
+      countFirecamp++;
+    } else if (k === "shower") {
+      countShower++;
+    }
+  }
+}
+console.log('El conteo de rain es ==>', countRain);
+console.log('El conteo de train es ==>', countTrain);
+console.log('El conteo de waves es ==>', countWaves);
+console.log('El conteo de firecamp es ==>', countFirecamp);
+console.log('El conteo de shower es ==>', countShower);
