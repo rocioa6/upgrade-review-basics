@@ -103,8 +103,23 @@ for (const key in users) {
     }
   }
 }
-console.log('El conteo de rain es ==>', countRain);
-console.log('El conteo de train es ==>', countTrain);
-console.log('El conteo de waves es ==>', countWaves);
-console.log('El conteo de firecamp es ==>', countFirecamp);
-console.log('El conteo de shower es ==>', countShower);
+console.log("El conteo de rain es ==>", countRain);
+console.log("El conteo de train es ==>", countTrain);
+console.log("El conteo de waves es ==>", countWaves);
+console.log("El conteo de firecamp es ==>", countFirecamp);
+console.log("El conteo de shower es ==>", countShower);
+
+/* **Iteración #4: Métodos findArrayIndex**
+
+Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. Haz varios ejemplos y compruebalos.
+
+Sugerencia de función: */
+function findArrayIndex(array, text) {
+
+  console.log("El index de", text, "es", array.indexOf(text));
+}
+
+
+let animalitos = ["Caracol", "Mosquito", "Salamandra", "Ajolote"];
+
+findArrayIndex(animalitos, 'Salamandra');
