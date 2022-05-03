@@ -136,3 +136,21 @@ Crea una función llamada **rollDice()** que reciba como parametro el numero de 
   }
 
   rollDice(6);
+
+ /*  **Iteración #6: Función swap**
+
+Crea una función llamada `swap()` que reciba un array y dos parametros que sean indices del array. La función deberá intercambiar la posición de los valores de los indices que hayamos enviado como parametro. Retorna el array resultante.
+
+Sugerencia de array: */
+function swap(array, indexOne, indexTwo) {
+    let wordOne = array[indexOne];
+    let wordTwo = array[indexTwo];
+
+    array.splice(indexOne, 1, wordTwo);
+    array.splice(indexTwo, 1, wordOne);
+    console.log(array);
+} 
+let furbolistas = ['Mesirve', 'Cristiano Romualdo', 'Fernando Muralla', 'Ronalguiño']
+swap(furbolistas, 0, 2)
+
+
